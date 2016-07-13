@@ -1,15 +1,24 @@
-# elpdfview
+# Electron pdf viewer
 
-view pdf in electron user pdf.js. 
+A node module for view pdf file in electron applications.
 
-npm install elpdfview
+![screenshot](assets/pdfviewer.png)
 
-# Usage
+##Introduction
+elpdfview module use third party pdf.js library. 
+
+When you create a new pdfview object, You get a BrowserWindow instance back from the call.
+
+##Install
+    
+    npm install elpdfview --save
+
+## Usage
 
 Used with pdf.js in render process in electron.
 
-```javascript
-var pdfurl ='https://www.canon.com.cn/products/printer/pixma-fax/images/speedtest.pdf';
-var pdfview = require('elpdfview');
-pdfview.showpdf(pdfurl);
-```
+	var pdfview = require('elpdfview');
+	
+	//set pdf path
+    var pdfurl ='https://www.canon.com.cn/products/printer/pixma-fax/images/speedtest.pdf';    
+    var win = pdfview.showpdf(pdfurl);

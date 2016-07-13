@@ -1,6 +1,6 @@
 {
   "name": "elpdfview",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "use pdf.js view pdf file in electron",
   "main": "index.js",
   "scripts": {

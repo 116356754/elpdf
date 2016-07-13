@@ -25,4 +25,6 @@ function showpdf(pdfurl){
     win.on('closed', function() {
         win = null;
     });
+	
+	return win;
 }
